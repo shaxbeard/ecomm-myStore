@@ -1,0 +1,123 @@
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  letter-spacing: normal;
+  font-size: initial;
+  line-height: initial;
+  color: #212529;
+}
+
+main {
+  min-height: 80vh;
+  margin-top: 130px;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+label {
+  font-weight: 400;
+}
+.btn {
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  font-weight: 400;
+}
+
+.rating span {
+  margin: 0.1rem;
+}
+
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 2.5vw;
+  }
+}
+
+/* HEADER */
+.navbar {
+  background: #f8f9fa;
+  padding: 30px 40px;
+  font-weight: 400;
+  z-index: 3;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+.navbar-collapse {
+  z-index: 3;
+  margin-left: 150px;
+}
+
+.navbar-brand-custom {
+  font-size: 2.25rem;
+  color: #00a36c;
+  text-transform: initial;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.navbar-brand-custom .fas.fa-seedling {
+  margin-left: 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0.375rem 0.75rem !important;
+  }
+}
+
+/* SIGN UP AND SIGN IN FORMS */
+.sign-up-form,
+.sign-in-form {
+  margin-top: 150px;
+}
+
+.sign-up-form .btn-primary,
+.sign-in-form .btn-primary {
+  width: 100%;
+  background-color: #00a36c;
+}
+
+/* LANDING PAGE */
+
+.landing-container {
+  max-width: 100%;
+  padding: 0;
+  // height: calc(100vh - 104px);
+  height: 100vh;
+}
+.hero-image {
+  // margin-top: 104px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/images/strawberry-garden.jpeg ");
+  // background-image: url("/images/strawberry-garden.jpeg ");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.hero-text {
+  left: 3%;
+  position: absolute;
+  color: white;
+  top: 33%;
+  font-size: 80px;
+}
+
+/* HOME PAGE */
+
+// .products-row .card-img-top {
+//   max-height: 187px;
+// }

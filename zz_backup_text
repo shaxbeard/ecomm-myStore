@@ -1,0 +1,4 @@
+NODE_ENV = development
+PORT = 5001
+MONGO_URI = mongodb+srv://eric:smudge@cluster0.tpbfiz4.mongodb.net/?retryWrites=true&w=majority
+JWT_SECRET = 'abc2187'
