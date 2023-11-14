@@ -10,7 +10,7 @@ cd frontend
 npm install
 ```
 
-# Run frontend & backend
+# Run frontend & backend (after database setup)
 
 ```
 npm run dev
