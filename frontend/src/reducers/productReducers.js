@@ -25,20 +25,25 @@ import {
   PRODUCT_TOP_FAIL,
 } from "../constants/productConstants";
 
+// This reducer function manages the state for the Product Grid/List
 export const productListReducer = (state = { products: [] }, action) => {
   switch (action.type) {
     case PRODUCT_LIST_REQUEST:
-      return { ...state, loading: true };
+      return { ...state, loading: true }; // Set loading state to true during the reqeust
     case PRODUCT_LIST_SUCCESS:
       return {
         ...state,
         loading: false,
+        //For scrolling pagination, handle each "page" of products
+        //by concatenating each subsequent "page" of data to the end of previous "pages"
         products: [...state.products, ...action.payload.products],
-        pages: action.payload.pages,
-        page: action.payload.page,
+        pages: action.payload.pages, // Total number of pages in the product list
+        page: action.payload.page, // Current page number
       };
+    //Handle a failed attempt to fetch a product list
     case PRODUCT_LIST_FAIL:
       return { ...state, loading: false, error: action.payload };
+    //Default case for handling unknown action types
     default:
       return state;
   }

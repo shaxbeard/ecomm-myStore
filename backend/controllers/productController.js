@@ -6,9 +6,11 @@ import Product from "../models/productModel.js";
 // @route   GET /api/products
 // @access  Public
 const getProducts = asyncHandler(async (req, res) => {
+  //Variables to handle the pagination feature
   const pageSize = 20;
   const page = Number(req.query.pageNumber) || 1;
 
+  //Extract the search keyword from the query string on the reqeust object
   const keyword = req.query.keyword
     ? {
         name: {
@@ -18,6 +20,7 @@ const getProducts = asyncHandler(async (req, res) => {
       }
     : {};
 
+  //Fetch the products from the database using the pagination and keyword filters
   const count = await Product.countDocuments({ ...keyword });
   const products = await Product.find({ ...keyword })
     .limit(pageSize)
