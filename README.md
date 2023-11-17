@@ -45,10 +45,6 @@ You can use the following commands to seed the database with some sample product
 npm run data:import
 ```
 
----
-
-# Project Description
-
 ```
 
 ```
