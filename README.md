@@ -38,7 +38,7 @@ Use this command to seed the database with some sample products
 npm run data:import
 ```
 
-# Run frontend & backend (after database setup)
+# Run frontend & backend
 
 ```
 npm run dev
