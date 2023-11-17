@@ -2,6 +2,8 @@
 
 https://ecomm-mystore.onrender.com/
 
+- The site may take 30 seconds to load since it it hosted on Render's free tier
+
 ---
 
 # Getting Started with this Project Locally
