@@ -16,12 +16,6 @@ cd frontend
 npm install
 ```
 
-# Run frontend & backend (after database setup)
-
-```
-npm run dev
-```
-
 ### Env Variables
 
 Create a .env file in the root and add the following
@@ -33,14 +27,19 @@ NODE_ENV = development
 PORT = 5001
 MONGO_URI = your mongodb uri
 JWT_SECRET = 'abc123'
-
 ```
 
 ### Seed Mongo Database
 
-You can use the following commands to seed the database with some sample products
+Use this command to seed the database with some sample products
 
 ```
 # Import data
 npm run data:import
+```
+
+# Run frontend & backend (after database setup)
+
+```
+npm run dev
 ```
